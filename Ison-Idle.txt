@@ -27,7 +27,6 @@ Resources
 		name:Bacon
 		desc:Savory crunchy bacon goodness!
 Upgrades
-	name:Holds
 	*holdFireMana
 		name:Hold Fire
 		desc:Prevents you from obtaining fire mana.
