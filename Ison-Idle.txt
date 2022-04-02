@@ -1,1 +1,42 @@
-
+Let's make a game!
+	name:Alchemical Clicker
+	by:Evena May Xin
+	desc:This is an alchemical clicker/idle game.
+	created:17/12/2020
+	updated:3/31/2022
+	version:0.0.0.02
+Settings
+	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
+	building cost increase:140%
+	building cost refund:80%
+	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	stylesheet:stuff/bigBlue.css
+Layout
+	use default
+Buttons
+	*mana
+		name:Gather Mana
+		desc:Begin gathering mana!
+		class:bigButton
+		icon:https://i.gifer.com/fetch/w300-preview/6d/6d11e19c13e7599592a1c22867f886e5.gif
+		no text
+		on click:yield 1 bacon
+Buildings
+Resources
+	*fireMana
+		name:Bacon
+		desc:Savory crunchy bacon goodness!
+Upgrades
+	name:Holds
+	*holdFireMana
+		name:Hold Fire
+		desc:Prevents you from obtaining fire mana.
+		passive:multiply yield of fireMana by 0
+		no buy
+		on click:
+			if (have this)
+				lose this
+			else
+				if (fireMana >= 30)gain this
+			end
+		end
