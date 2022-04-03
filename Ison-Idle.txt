@@ -15,7 +15,7 @@ Layout
 	use default
 Buttons
 	*mana
-		name:Gather Mana
+		name:Cook Bacon
 		desc:Begin gathering mana!
 		class:bigButton
 		icon:https://i.gifer.com/fetch/w300-preview/6d/6d11e19c13e7599592a1c22867f886e5.gif
@@ -23,14 +23,14 @@ Buttons
 		on click:yield 1 bacon
 Buildings
 Resources
-	*fireMana
+	*bacon
 		name:Bacon
 		desc:Savory crunchy bacon goodness!
 Upgrades
-	*holdFireMana
-		name:Hold Fire
-		desc:Prevents you from obtaining fire mana.
-		passive:multiply yield of fireMana by 0
+	*upgrade001
+		name:Upgrade 001
+		desc:example description
+		passive:multiply yield of bacon by 2
 		no buy
 		on click:
 			if (have this)
